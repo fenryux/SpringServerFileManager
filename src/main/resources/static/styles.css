@@ -1,0 +1,40 @@
+body {
+    background-color: azure;
+}
+input{
+    background-color: cadetblue;
+    font-family: "Cascadia Mono PL", serif;
+    border: black;
+    padding: 5px 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#message {
+    width: 500px;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Cascadia Mono PL", serif;
+}
+
+a{
+    font-family: "Cascadia Mono PL", serif;
+}
+
+#filesList {
+    margin: auto;
+    width: 400px;
+    padding-top: 15px;
+}
+#form {
+    width: 430px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+label{
+    font-family: "Cascadia Mono PL", serif;
+}
+

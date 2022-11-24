@@ -1,0 +1,31 @@
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Server Files</title>
+    <link rel="stylesheet" th:href="@{styles.css}">
+<!--    <link rel="stylesheet" href="../static/styles.css">-->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  </head>
+  <body>
+    <div th:if="${message}" id="message">
+      <h3 th:text="${message}"/>
+    </div>
+
+    <div id="form">
+      <form method="post" enctype="multipart/form-data" action="/">
+        <label>Upload file:
+          <input type="file" name="uploading-file">
+          <input type="submit" value="Upload">
+        </label>
+      </form>
+    </div>
+
+    <div id="filesList">
+      <label>Files:</label>
+      <ul>
+        <li th:each="file : ${files}">
+          <a th:href="${file}" th:text="${file}"/>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
